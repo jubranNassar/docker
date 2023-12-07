@@ -1,5 +1,5 @@
 FROM public.ecr.aws/spacelift/runner-terraform:latest as spacelift
-FROM golang:1.21.5-alpine3.18 as builder
+FROM golang:1.21.5-alpine as builder
 FROM hub.docker.com/r/fugue/regula as regula
 WORKDIR /tmp
 
