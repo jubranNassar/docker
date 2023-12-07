@@ -4,6 +4,6 @@ FROM fugue/regula:latest as regula
 
 WORKDIR /tmp
 
-FROM alpine:3.10
+FROM alpine:latest
 
 RUN adduser --disabled-password --no-create-home --uid=1983 spacelift
